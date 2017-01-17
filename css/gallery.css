@@ -6,7 +6,7 @@ h1{
    margin-top: 10px;
    margin-left: 177px;
    padding: 20px 30px;
-    width: 864px;
+    width: 873px;
 }
 
 input[type="text"]{
@@ -18,12 +18,11 @@ input[type="text"]{
 img{
     padding: 20px;
     width: 165px;
-    
+
 }
-span{
-    display: block;
-    font-weight: bold;
-   font-size: 1.2rem;
+p {
+    font-weight: 300;;
+   font-size: 1.5rem;
 }
 
 ul.list{
