@@ -1,36 +1,87 @@
-*, *:before, *:after{
-  box-sizing: border-box;
-}
-h1{
-    text-align: center;
+body {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-input[type="text"]{
+input {
     width: 450px;
-    padding: 10px;
-    margin: 2% 25%;
-}
-
-p {
-    font-weight: 300;
-    font-size: 1.5rem;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin: 38px 256px;
 }
 
 .gallery{
-  padding: 10px;
-}
-img {
-  padding: 10px;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+
 }
 
-@media (min-width:300px) {
-  #images{
-    width:50%;
-  }
+.responsive-image{
+    max-width: 100%;
 }
 
-@media (min-width:500px) {
-  #images{
-    width: 75%;
-  }
+a {
+    margin: 1rem 0;
+}
+
+a {
+    display: block;
+}
+
+
+
+
+
+@media (min-width: 400px) and (max-width: 599px){
+    a{
+        padding-left: 5rem;
+    }
+
+    input{
+        width: 238px;
+        margin-left: 57px;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    .list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    a{
+        width: calc(34% - 2rem);
+        margin: 1rem;
+    }
+
+    input{
+        width: 315px;
+        margin-left: 130px;
+    }
+
+}
+
+@media screen and (min-width: 700px), and (max-width: 900px){
+    a {
+        width: calc(33% - 2rem);
+        margin: 1rem;
+    }
+
+    input{
+        margin-left: 155px;
+    }
+}
+@media screen and (min-width: 801px){
+    a{
+        width: calc(24% - 2rem);
+    }
+    input{
+        width: 320px;
+        margin: 38px calc(29% - 20px);
+    }
 }
